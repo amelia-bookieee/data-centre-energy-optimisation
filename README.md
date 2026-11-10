@@ -127,7 +127,7 @@ notebooks/
 report/
 README.md
 requirements.txt
-```
+...
 
 The three notebooks serve different purposes:
 
@@ -146,7 +146,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/amelia-bookieee/data-centre-energy-optimisation.git
 cd data-centre-energy-optimisation
-``
+
 
 ## 7. Limitations
 
