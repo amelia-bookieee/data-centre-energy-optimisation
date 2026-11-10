@@ -146,27 +146,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/amelia-bookieee/data-centre-energy-optimisation.git
 cd data-centre-energy-optimisation
-```
-
-Install the required dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-Open the repository in Jupyter Notebook or VS Code.
-
-Run:
-
-```text
-notebooks/03_final_backtest.ipynb
-```
-
-This notebook reads the processed datasets, trains the forecasting models, generates scheduling decisions and reproduces the main evaluation tables.
-
-**The original historical API collection does not need to be repeated.** The processed datasets are provided in `data/processed/`.
-
-The exploratory notebook can be used to examine the development process separately.
+``
 
 ## 7. Limitations
 
