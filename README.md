@@ -131,11 +131,11 @@ requirements.txt
 
 The three notebooks serve different purposes:
 
-**01 — Data Collection:** Documents API requests, data cleaning and validation procedures.
+01 — Data Collection: Documents API requests, data cleaning and validation procedures.
 
-**02 — Data Analysis:** Contains exploratory analysis, forecasting experiments, model comparisons and sensitivity analyses.
+02 — Data Analysis: Contains exploratory analysis, forecasting experiments, model comparisons and sensitivity analyses.
 
-**03 — Final Backtest:** Provides an independent pipeline for reproducing the corrected retrospective forecasting and scheduling results.
+03 — Final Backtest: Provides an independent pipeline for reproducing the corrected retrospective forecasting and scheduling results.
 
 The `report/` directory contains the detailed research report with mathematical formulations, results, discussion and references.
 
@@ -152,11 +152,11 @@ cd data-centre-energy-optimisation
 
 Several assumptions affect the interpretation of the results:
 
-- **Electricity prices:** The study uses APX wholesale market index prices, not actual data centre retail tariffs. Network charges, supplier fees and taxes are excluded.
-- **Workload flexibility:** The model assumes that the full 6 MWh workload can be divided and shifted within the day. Individual job arrivals, task dependencies and operating costs are not modelled.
-- **Data availability:** A 24-hour historical observation delay is assumed. Actual publication timestamps were not independently verified.
-- **Retrospective evaluation:** The missing-data fallback and training cutoff were corrected after the initial test inspection. The results should not be described as a completely untouched real-time evaluation.
-- **Carbon emissions:** Emissions are calculated using national average grid carbon intensity. The reported reduction does not establish the amount of grid emissions causally avoided.
+Electricity prices: The study uses APX wholesale market index prices, not actual data centre retail tariffs. Network charges, supplier fees and taxes are excluded.
+Workload flexibility: The model assumes that the full 6 MWh workload can be divided and shifted within the day. Individual job arrivals, task dependencies and operating costs are not modelled.
+Data availability: A 24-hour historical observation delay is assumed. Actual publication timestamps were not independently verified.
+Retrospective evaluation: The missing-data fallback and training cutoff were corrected after the initial test inspection. The results should not be described as a completely untouched real-time evaluation.
+Carbon emissions: Emissions are calculated using national average grid carbon intensity. The reported reduction does not establish the amount of grid emissions causally avoided.
 
 These limitations define the scope of the findings and identify areas for further development.
 
@@ -167,21 +167,21 @@ The full report provides detailed explanations of the data, forecasting methods,
 
 ## 9. Tools and Libraries
 
-**Language:** Python
+Language: Python
 
-**Data analysis:** pandas, NumPy, Matplotlib
+Data analysis: pandas, NumPy, Matplotlib
 
-**Machine learning:** scikit-learn
+Machine learning: scikit-learn
 
-**Optimisation:** SciPy, Linear Programming (HiGHS)
+Optimisation: SciPy, Linear Programming (HiGHS)
 
-**Statistical evaluation:** MAE, RMSE, Spearman correlation, moving-block bootstrap
+Statistical evaluation: MAE, RMSE, Spearman correlation, moving-block bootstrap
 
 ## 10. Data Sources and Documentation
 
-- [Elexon — Balancing Mechanism Reporting Service](https://bmrs.elexon.co.uk/)
-- [Great Britain Carbon Intensity API](https://carbonintensity.org.uk/)
-- [scikit-learn documentation](https://scikit-learn.org/stable/)
-- [SciPy optimisation documentation](https://docs.scipy.org/doc/scipy/reference/optimize.html)
+[Elexon — Balancing Mechanism Reporting Service](https://bmrs.elexon.co.uk/)
+[Great Britain Carbon Intensity API](https://carbonintensity.org.uk/)
+[scikit-learn documentation](https://scikit-learn.org/stable/)
+[SciPy optimisation documentation](https://docs.scipy.org/doc/scipy/reference/optimize.html)
 
 *Independent research project | November 2026*
